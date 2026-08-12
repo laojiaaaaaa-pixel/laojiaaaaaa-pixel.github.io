@@ -3,6 +3,8 @@ pages:
   url: /
 - name: Projects
   url: /projects.html
+- name: Research Proposal
+  url: /research-proposal.html
 - name: Experience
   url: /experience.html
 - name: CV
