@@ -1,0 +1,9 @@
+pages:
+- name: Home
+  url: /
+- name: Projects
+  url: /projects.html
+- name: Experience
+  url: /experience.html
+- name: CV
+  url: /assets/Jiarui-Lao-CV.pdf

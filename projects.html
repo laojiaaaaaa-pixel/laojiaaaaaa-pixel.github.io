@@ -1,0 +1,60 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+---
+
+<div class="page-heading mb-4">
+  <h1>Projects</h1>
+  <p>Research at the intersection of AI, information, and social science.</p>
+</div>
+
+<article class="card border-0 shadow-sm bg-white mb-4">
+  <div class="card-body p-4 p-md-5">
+    <span class="text-muted small">01 · 2026–present</span>
+    <h2 class="mt-2">AI-Generated News and Social Media Trust</h2>
+    <p class="lead">How does AI participation in news production shape perceived human oversight, verification, trust, and user behavior?</p>
+    <p>The project uses OASIS to place heterogeneous simulated agents in controlled news environments. In Phase 01, nine fixed accurate-news texts were balanced across four production-mode disclosures, with 100 matched agents per mode and 400 complete first-exposure observations.</p>
+
+    <div class="row metric-grid my-4">
+      <div class="col-6 col-md-3"><strong>9</strong><span>fixed texts</span></div>
+      <div class="col-6 col-md-3"><strong>4</strong><span>production modes</span></div>
+      <div class="col-6 col-md-3"><strong>100</strong><span>agents per mode</span></div>
+      <div class="col-6 col-md-3"><strong>400</strong><span>T0 observations</span></div>
+    </div>
+
+    <h5>Phase 01 snapshot</h5>
+    <div class="table-responsive">
+      <table class="table table-sm academic-table">
+        <thead><tr><th>Production mode</th><th>Article trust</th><th>Human control</th><th>Perceived verification</th><th>Verify action</th></tr></thead>
+        <tbody>
+          <tr><td>Human-led</td><td>69.35</td><td>92.30</td><td>81.80</td><td>9%</td></tr>
+          <tr><td>AI-assisted</td><td>68.65</td><td>81.30</td><td>76.60</td><td>11%</td></tr>
+          <tr><td>AI draft–human edit</td><td>67.50</td><td>77.10</td><td>77.10</td><td>12%</td></tr>
+          <tr><td>AI-dominant</td><td>44.55</td><td>29.30</td><td>36.20</td><td>74%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="data-note"><strong>Reading note.</strong> Human control and perceived verification are mean 0–1 structured judgments produced by simulated agents, displayed on a 0–100 scale. They are not percentages of real survey respondents.</p>
+
+    <h5 class="mt-4">Paired false-news experiment</h5>
+    <p>The same 25 false-news items were presented with and without an AI-generated disclosure label across news exposure, peer discussion, and expert correction. Belief in the false claim was lower in the labeled condition at all three stages.</p>
+    <div class="row metric-grid compact my-4">
+      <div class="col-md-4"><strong>−25.6 pp</strong><span>T1 label gap</span></div>
+      <div class="col-md-4"><strong>−33.7 pp</strong><span>T2 label gap</span></div>
+      <div class="col-md-4"><strong>−28.8 pp</strong><span>T3 label gap</span></div>
+    </div>
+    <p class="data-note">All findings are descriptive simulation evidence and should be interpreted as mechanism signals, not causal estimates for real users.</p>
+    <a class="btn btn-primary mt-2" target="_blank" href="{{ '/assets/Jiarui-Lao-Research-Plan-CN.pdf' | relative_url }}">Research plan</a>
+  </div>
+</article>
+
+<article class="card border-0 shadow-sm bg-white">
+  <div class="card-body p-4 p-md-5">
+    <span class="text-muted small">02 · 2026–present</span>
+    <h2 class="mt-2">Power Politics and Normative Dynamics in China’s Territorial Disputes</h2>
+    <p class="lead">Building a longitudinal database of diplomatic activity from multi-country news.</p>
+    <p>The project combines rule-based extraction and BERT classification to identify actors, institutions, visit direction, event type, and topic. The workflow emphasizes entity normalization, annotation consistency, and reproducible data-quality checks.</p>
+    <div class="interest-tags"><span>BERT</span><span>Entity normalization</span><span>Annotation workflow</span><span>Data quality</span></div>
+  </div>
+</article>

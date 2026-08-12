@@ -1,0 +1,44 @@
+primary_name: "Jiarui Lao"
+secondary_name: "劳嘉瑞"
+navbar_name: "Jiarui Lao"
+
+positions:
+- name: B.A. Student in International Affairs & International Relations
+- name: China Foreign Affairs University
+
+email: "laojiaaaaaa@gmail.com"
+cv_link: /assets/Jiarui-Lao-CV.pdf
+research_plan_link: /assets/Jiarui-Lao-Research-Plan-CN.pdf
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am an undergraduate student at <strong>China Foreign Affairs University</strong>,
+    majoring in International Affairs and International Relations with a minor in Spanish.
+    My current GPA is <strong>3.82/4.0</strong>, and I expect to graduate in 2027.
+  </p>
+  <p>
+    I am interested in AI and society, computational social science, information trust,
+    and NLP for social research. My current work examines how AI participation in news
+    production shapes perceived human oversight, verification, trust, and user behavior.
+  </p>
+
+education:
+- name: China Foreign Affairs University
+  position: B.A. in International Affairs & International Relations; Minor in Spanish
+  date: 2023–2027
+
+experience:
+- name: Institute of Social Science Survey, Peking University
+  position: CFPS Data Verification Intern
+  date: Jun.–Sep. 2026
+- name: Tsinghua University
+  position: Research Assistant, Digital Government Responsiveness Project
+  date: Apr.–Jun. 2026
+- name: Beijing SynTao Consulting
+  position: ESG Consulting Intern
+  date: Jan.–Apr. 2026
+
+awards:
+- name: Outstanding Student Scholarship
+- name: “Senior Diplomats” Scholarship
