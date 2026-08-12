@@ -6,16 +6,17 @@
                     <div class="col">
                         {% if site.data.profile.portrait_url %}
                         <!-- When the screen is wider than md, float the portrait on the right -->
-                        <div class="figure d-none d-md-block">
+                        <div class="figure d-none d-md-block text-center">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid" 
+                                class="academic-portrait" 
                                 data-toggle="tooltip" 
                                 data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
+                                title="{{ site.data.profile.portrait_caption }}"
+                                alt="Portrait of {{ site.data.profile.primary_name }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="academic-portrait" alt="Portrait of {{ site.data.profile.primary_name }}">
                         </div>
                         {% else %}
                         <div class="academic-monogram" aria-label="Jiarui Lao initials">JL</div>
@@ -49,10 +50,6 @@
                         {% if site.data.profile.cv_link %}
                         <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="CV"><i class="fas fa-file-lines"></i></a>
                         {% endif %}
-                        {% if site.data.profile.research_plan_link %}
-                        <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.research_plan_link | relative_url }}" title="Research plan"><i class="fas fa-book-open"></i></a>
-                        {% endif %}
-                        
                         {% if site.data.profile.github %}
                         <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
                             <i class="fab fa-github"></i>
