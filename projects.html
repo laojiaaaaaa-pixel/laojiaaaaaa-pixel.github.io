@@ -84,21 +84,50 @@ navbar_title: Projects
     </section>
 
     <section class="project-section false-news-section">
-      <div class="section-label">Paired false-news experiment</div><h3>An AI disclosure label lowered belief before correction arrived.</h3>
-      <p>The same 25 false-news items were presented with and without an AI-generated label. Outcomes were observed after initial exposure, peer discussion, and expert correction.</p>
-      <div class="row metric-grid compact my-4"><div class="col-6 col-md-3"><strong>25</strong><span>paired items</span></div><div class="col-6 col-md-3"><strong>5</strong><span>news topics</span></div><div class="col-6 col-md-3"><strong>3</strong><span>stages</span></div><div class="col-6 col-md-3"><strong>748</strong><span>reflections</span></div></div>
-      <div class="experiment-stages"><div><strong>T1</strong><span>Exposure</span><small>False news enters the feed</small></div><div><strong>T2</strong><span>Discussion</span><small>Peer signals accumulate</small></div><div><strong>T3</strong><span>Correction</span><small>Expert evidence appears</small></div></div>
-      <div class="row research-chart-row mt-4">
-        <div class="col-lg-7 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>D · BELIEF</span><h4>Believed the false claim</h4></div><p class="chart-note">Rate by stage · no label versus AI label</p><div class="dual-legend belief-legend"><span>No label</span><span>AI label</span></div><div class="dual-bars belief-bars"><div><span>T1 · Exposure</span><i><b style="width:60.8%"></b><em style="width:35.2%"></em></i><strong>60.8 / 35.2%</strong></div><div><span>T2 · Discussion</span><i><b style="width:58.5%"></b><em style="width:24.8%"></em></i><strong>58.5 / 24.8%</strong></div><div><span>T3 · Correction</span><i><b style="width:66.4%"></b><em style="width:37.6%"></em></i><strong>66.4 / 37.6%</strong></div></div><p class="chart-finding">The label gap was largest during peer discussion: −33.7 percentage points at T2.</p></div></div>
-        <div class="col-lg-5 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>E · REASONING</span><h4>What agents cited</h4></div><p class="chart-note">Share of coded reasons across T1–T3</p><div class="reason-list"><div><strong>53.4%</strong><span>No-label agents cited source authority</span></div><div><strong>90.1%</strong><span>Labeled agents explicitly cited the disclosure</span></div><div><strong>76.3%</strong><span>Labeled agents expressed skepticism or doubt</span></div></div><p class="chart-finding">The label shifted reasoning from source-based trust toward authenticity scrutiny.</p></div></div>
+      <div class="section-label">Updated experiment · Illusory truth</div>
+      <h3>Repeated exposure reliably increased belief in a single false claim.</h3>
+      <p>Agents encountered two false-news items twice and then rated those repeated claims alongside three novel false claims. Independent cohorts were tested after 1, 2, or 7 days across all four production modes.</p>
+      <div class="row metric-grid compact my-4"><div class="col-6 col-md-3"><strong>3,000</strong><span>claim ratings</span></div><div class="col-6 col-md-3"><strong>600</strong><span>agent × delay cells</span></div><div class="col-6 col-md-3"><strong>12/12</strong><span>significant ITE cells</span></div><div class="col-6 col-md-3"><strong>0</strong><span>fallbacks</span></div></div>
+
+      <div class="academic-chart mb-4">
+        <div class="chart-title"><span>D · PRIMARY RESULT</span><h4>Illusory truth effect by production mode and delay</h4></div>
+        <p class="chart-note">ITE = mean truth rating of repeated claims − novel claims · all 12 cells p &lt; .001</p>
+        <div class="ite-legend"><span>1 day</span><span>2 days</span><span>7 days</span></div>
+        <div class="ite-matrix">
+          <div><span>Human-led</span><i><b style="height:75.3%"></b><b style="height:80.1%"></b><b style="height:81%"></b></i><strong>.226 / .240 / .243</strong><em>mean .236</em></div>
+          <div><span>AI-assisted</span><i><b style="height:82.4%"></b><b style="height:72.1%"></b><b style="height:75.5%"></b></i><strong>.247 / .216 / .227</strong><em>mean .230</em></div>
+          <div><span>AI draft–human edit</span><i><b style="height:82.6%"></b><b style="height:80.3%"></b><b style="height:71.7%"></b></i><strong>.248 / .241 / .215</strong><em>mean .234</em></div>
+          <div><span>AI-dominant</span><i><b style="height:75.6%"></b><b style="height:76.3%"></b><b style="height:71.1%"></b></i><strong>.227 / .229 / .213</strong><em>mean .223</em></div>
+        </div>
+        <p class="chart-finding">Between 90% and 98% of agents in every cell showed a positive ITE. Production mode and the 1–7 day interval did not significantly alter its size.</p>
       </div>
-      <h4 class="subsection-title">T3 belief gap by topic</h4><div class="topic-gaps"><div><span>Economy</span><i><b style="width:20%"></b></i><strong>+8 pp</strong></div><div><span>Disaster</span><i><b style="width:100%"></b></i><strong>+40 pp</strong></div><div><span>Policy</span><i><b style="width:100%"></b></i><strong>+40 pp</strong></div><div><span>Entertainment</span><i><b style="width:70%"></b></i><strong>+28 pp</strong></div><div><span>Health</span><i><b style="width:70%"></b></i><strong>+28 pp</strong></div></div>
+
+      <div class="row research-chart-row">
+        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
+          <div class="chart-title"><span>E · GENERAL SKEPTICISM</span><h4>Truth ratings averaged across delays</h4></div><p class="chart-note">Human-led versus AI-dominant</p>
+          <div class="dual-legend belief-legend"><span>Repeated false</span><span>Novel false</span></div>
+          <div class="dual-bars belief-bars"><div><span>Human-led</span><i><b style="width:76.4%"></b><em style="width:52.7%"></em></i><strong>.764 / .527</strong></div><div><span>AI-dominant</span><i><b style="width:72%"></b><em style="width:49.7%"></em></i><strong>.720 / .497</strong></div></div>
+          <div class="significance-note"><span>Repeated: −.044, p &lt; .001</span><span>Novel: −.031, p = .003</span><span>ITE: −.013, p = .292</span></div>
+          <p class="chart-finding">AI-dominant production reduced belief in both repeated and novel false claims. It produced broad skepticism, not selective resistance to repetition.</p>
+        </div></div>
+        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
+          <div class="chart-title"><span>F · MANIPULATION CHECK</span><h4>Cognitive mechanisms at T0</h4></div><p class="chart-note">Human-led versus AI-dominant · mean 0–1 score</p>
+          <div class="mechanism-compare"><div><span>Negative machine heuristic</span><i><b style="width:23.7%"></b><em style="width:51.5%"></em></i><strong>.237 → .515</strong></div><div><span>Verification intention</span><i><b style="width:47.8%"></b><em style="width:52.2%"></em></i><strong>.478 → .522</strong></div><div><span>Perceived AI involvement</span><i><b style="width:4.7%"></b><em style="width:88%"></em></i><strong>.047 → .880</strong></div><div><span>Perceived human control</span><i><b style="width:92.8%"></b><em style="width:40.5%"></em></i><strong>.928 → .405</strong></div></div>
+          <p class="chart-finding">The manipulation changed the proposed mechanisms, but their within-cell correlations with ITE were small and unstable; mediation is therefore not claimed.</p>
+        </div></div>
+      </div>
+
+      <div class="row research-chart-row">
+        <div class="col-lg-7 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>G · DELAY</span><h4>Memory accessibility before and after repeat exposure</h4></div><p class="chart-note">Mean accessibility by delay</p><div class="dual-legend memory-legend"><span>Before repeat</span><span>After repeat</span></div><div class="dual-bars memory-bars"><div><span>1 day</span><i><b style="width:74.1%"></b><em style="width:93.9%"></em></i><strong>.741 / .939</strong></div><div><span>2 days</span><i><b style="width:67.1%"></b><em style="width:93.2%"></em></i><strong>.671 / .932</strong></div><div><span>7 days</span><i><b style="width:40.9%"></b><em style="width:88.7%"></em></i><strong>.409 / .887</strong></div></div><p class="chart-finding">Accessibility decayed with time, but repeat exposure restored it. Final repeated-claim ratings remained similar: .754, .759, and .744.</p></div></div>
+        <div class="col-lg-5 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>H · MATERIALS</span><h4>ITE by false-news item</h4></div><p class="chart-note">Pooled raw mean difference</p><div class="item-bars"><div><span>E010</span><i><b style="width:70.3%"></b></i><strong>.201</strong></div><div><span>E011</span><i><b style="width:73.1%"></b></i><strong>.209</strong></div><div><span>E012</span><i><b style="width:81.8%"></b></i><strong>.234</strong></div><div class="highlight"><span>E013</span><i><b style="width:100%"></b></i><strong>.286</strong></div><div><span>E014</span><i><b style="width:79%"></b></i><strong>.226</strong></div></div><p class="chart-finding">All five items showed the effect; E013 was strongest, underscoring the role of claim plausibility, specificity, and topic.</p></div></div>
+      </div>
+      <p class="data-note"><strong>Data quality and boundary.</strong> The run contains 1,401 API requests, zero fallbacks, and one successful T0 retry. ITE is a final repeated-versus-novel contrast; the design does not measure the same claim's truth rating at T0. Results are simulation evidence, not human-population causal estimates.</p>
     </section>
 
     <section class="project-section mb-0">
       <div class="section-label">Interpretation</div><h3>What the simulations suggest</h3>
-      <div class="row interpretation-grid"><div class="col-md-4"><h5>Oversight matters</h5><p>AI involvement alone did not reduce trust when human supervision remained explicit.</p></div><div class="col-md-4"><h5>Disclosure changes action</h5><p>AI-dominant disclosure produced a strong shift from engagement toward verification.</p></div><div class="col-md-4"><h5>Labels frame reasoning</h5><p>An AI label prompted authenticity scrutiny before peer discussion or expert correction.</p></div></div>
-      <p class="data-note mt-3"><strong>Scope and limitations.</strong> These are descriptive matched-simulation results. Phase 01 contains 400 complete T0 records with no fallback responses or validation errors. The false-news comparison uses 25 paired items across five topics and one seed per item. Findings are mechanism signals—not causal estimates for human populations.</p>
+      <div class="row interpretation-grid"><div class="col-md-4"><h5>Repetition remains powerful</h5><p>Two exposures produced a stable positive illusory truth effect in every production mode and delay.</p></div><div class="col-md-4"><h5>AI prompts broad skepticism</h5><p>AI-dominant production lowered belief in repeated and novel false claims rather than selectively suppressing repetition.</p></div><div class="col-md-4"><h5>Mechanism is not mediation</h5><p>Machine heuristics and verification changed as predicted, but did not explain meaningful variation in ITE.</p></div></div>
+      <p class="data-note mt-3"><strong>Current conclusion.</strong> Repetition significantly raises the credibility of a false claim. AI-dominant production activates skepticism and verification awareness and lowers overall false-claim credibility, but the relative repetition gain remains statistically unchanged.</p>
       <a class="btn btn-outline-primary mt-2" target="_blank" href="{{ '/assets/Jiarui-Lao-Research-Plan-CN.pdf' | relative_url }}">Read research plan</a>
     </section>
   </div>
