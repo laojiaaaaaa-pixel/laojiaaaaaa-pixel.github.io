@@ -6,204 +6,33 @@ navbar_title: Projects
 
 <div class="page-heading mb-4">
   <h1>Projects</h1>
-  <p>Research at the intersection of AI, information, and social science.</p>
+  <p>Selected research projects in AI, information, and political science.</p>
 </div>
 
-<article class="card border-0 shadow-sm bg-white mb-4 research-project">
+<article class="card border-0 shadow-sm bg-white mb-4">
   <div class="card-body p-4 p-md-5">
-    <header class="project-header">
-      <span class="text-muted small">01 · 2026–present</span>
-      <h2 class="mt-2">AI-Generated News and Social Media Trust</h2>
-      <p class="lead">How does AI participation in news production shape perceived human oversight, verification, trust, and user behavior?</p>
-      <div class="interest-tags"><span>OASIS</span><span>Multi-agent simulation</span><span>AI disclosure</span><span>Computational social science</span></div>
-    </header>
-
-    <section class="project-section">
-      <div class="section-label">Overview</div>
-      <h3>Research question and design</h3>
-      <p>This project uses OASIS to place heterogeneous simulated agents in controlled social-media news environments. It isolates how the disclosed division of labor between humans and AI changes initial judgments, intended actions, and later reasoning.</p>
-      <div class="design-flow" aria-label="Research workflow">
-        <div><strong>01</strong><span>Hold article and publisher constant</span></div><i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <div><strong>02</strong><span>Vary the production disclosure</span></div><i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <div><strong>03</strong><span>Observe judgment and action</span></div>
-      </div>
-      <div class="row metric-grid my-4">
-        <div class="col-6 col-md-3"><strong>9</strong><span>fixed texts</span></div><div class="col-6 col-md-3"><strong>4</strong><span>production modes</span></div>
-        <div class="col-6 col-md-3"><strong>100</strong><span>agents per mode</span></div><div class="col-6 col-md-3"><strong>400</strong><span>T0 observations</span></div>
-      </div>
-    </section>
-
-    <section class="project-section">
-      <div class="section-label">Phase 01 · First impressions</div>
-      <h3>Human oversight—not the absence of AI—anchored initial trust.</h3>
-      <p>Nine fixed news texts were balanced across matched agents. Article length, body text, publisher, and agent–text assignment stayed constant; only the production disclosure changed.</p>
-      <div class="row research-chart-row">
-        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
-          <div class="chart-title"><span>A · T0</span><h4>Initial article trust</h4></div><p class="chart-note">Mean score · 0–100 display scale</p>
-          <div class="horizontal-bars">
-            <div><span>Human-led</span><i><b style="width:69.35%"></b></i><strong>69.4</strong></div><div><span>AI-assisted</span><i><b style="width:68.65%"></b></i><strong>68.7</strong></div>
-            <div><span>AI draft–human edit</span><i><b style="width:67.5%"></b></i><strong>67.5</strong></div><div class="alert-bar"><span>AI-dominant</span><i><b style="width:44.55%"></b></i><strong>44.6</strong></div>
-          </div><p class="chart-finding">The three human-supervised modes clustered within 1.9 points. AI-dominant production was 24.8 points below human-led production.</p>
-        </div></div>
-        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
-          <div class="chart-title"><span>B · MECHANISM</span><h4>Perceived oversight and verification</h4></div><p class="chart-note">Mean score at first exposure</p>
-          <div class="dual-legend"><span>Human control</span><span>Verification</span></div>
-          <div class="dual-bars">
-            <div><span>Human-led</span><i><b style="width:92.3%"></b><em style="width:81.8%"></em></i><strong>92 / 82</strong></div><div><span>AI-assisted</span><i><b style="width:81.3%"></b><em style="width:76.6%"></em></i><strong>81 / 77</strong></div>
-            <div><span>AI draft–human edit</span><i><b style="width:77.1%"></b><em style="width:77.1%"></em></i><strong>77 / 77</strong></div><div><span>AI-dominant</span><i><b style="width:29.3%"></b><em style="width:36.2%"></em></i><strong>29 / 36</strong></div>
-          </div><p class="chart-finding">Trust moved with perceived human control and verification; both collapsed when AI became the dominant producer.</p>
-        </div></div>
-      </div>
-      <div class="row finding-cards mb-4">
-        <div class="col-md-4"><div><strong>9/9</strong><span>texts showed the penalty</span><p>AI-dominant trust was lower in every fixed-text comparison.</p></div></div>
-        <div class="col-md-4"><div><strong>−24.8 pp</strong><span>AI-dominant trust gap</span><p>Matched mean difference from human-led production at T0.</p></div></div>
-        <div class="col-md-4"><div><strong>74%</strong><span>chose verification</span><p>Compared with 9–12% in the human-supervised modes.</p></div></div>
-      </div>
-      <h4 class="subsection-title">Full Phase 01 measures</h4>
-      <div class="measure-legend"><span class="human">Human-led</span><span class="assist">AI-assisted</span><span class="draft">AI draft–edit</span><span class="dominant">AI-dominant</span></div>
-      <div class="measure-facets">
-        <section class="measure-facet" aria-labelledby="judgment-chart-title">
-          <h5 id="judgment-chart-title">Judgment outcomes</h5>
-          <div class="grouped-measures">
-            <div><span>Article quality</span><i><b class="human" style="width:72.8%"></b><em>72.8</em><b class="assist" style="width:70.9%"></b><em>70.9</em><b class="draft" style="width:69.3%"></b><em>69.3</em><b class="dominant" style="width:52%"></b><em>52.0</em></i></div>
-            <div><span>Article trust</span><i><b class="human" style="width:69.4%"></b><em>69.4</em><b class="assist" style="width:68.7%"></b><em>68.7</em><b class="draft" style="width:67.5%"></b><em>67.5</em><b class="dominant" style="width:44.6%"></b><em>44.6</em></i></div>
-            <div><span>Media trust</span><i><b class="human" style="width:57.5%"></b><em>57.5</em><b class="assist" style="width:56.5%"></b><em>56.5</em><b class="draft" style="width:56.1%"></b><em>56.1</em><b class="dominant" style="width:40.4%"></b><em>40.4</em></i></div>
-          </div>
-        </section>
-        <section class="measure-facet" aria-labelledby="heuristics-chart-title">
-          <h5 id="heuristics-chart-title">Machine heuristics</h5>
-          <div class="grouped-measures">
-            <div><span>Positive machine cue</span><i><b class="human" style="width:3.4%"></b><em>3.4</em><b class="assist" style="width:23.1%"></b><em>23.1</em><b class="draft" style="width:37.3%"></b><em>37.3</em><b class="dominant" style="width:38%"></b><em>38.0</em></i></div>
-            <div><span>Negative machine cue</span><i><b class="human" style="width:3.2%"></b><em>3.2</em><b class="assist" style="width:16.2%"></b><em>16.2</em><b class="draft" style="width:26.8%"></b><em>26.8</em><b class="dominant" style="width:46.5%"></b><em>46.5</em></i></div>
-            <div><span>Perceived human control</span><i><b class="human" style="width:92.3%"></b><em>92.3</em><b class="assist" style="width:81.3%"></b><em>81.3</em><b class="draft" style="width:77.1%"></b><em>77.1</em><b class="dominant" style="width:29.3%"></b><em>29.3</em></i></div>
-          </div>
-        </section>
-        <section class="measure-facet" aria-labelledby="intentions-chart-title">
-          <h5 id="intentions-chart-title">Behavioral intentions</h5>
-          <div class="grouped-measures">
-            <div><span>Reading</span><i><b class="human" style="width:73.7%"></b><em>73.7</em><b class="assist" style="width:71.6%"></b><em>71.6</em><b class="draft" style="width:72.2%"></b><em>72.2</em><b class="dominant" style="width:63.5%"></b><em>63.5</em></i></div>
-            <div><span>Sharing</span><i><b class="human" style="width:45.8%"></b><em>45.8</em><b class="assist" style="width:44.6%"></b><em>44.6</em><b class="draft" style="width:44.8%"></b><em>44.8</em><b class="dominant" style="width:37.9%"></b><em>37.9</em></i></div>
-            <div><span>Verification</span><i><b class="human" style="width:43%"></b><em>43.0</em><b class="assist" style="width:43.4%"></b><em>43.4</em><b class="draft" style="width:45.6%"></b><em>45.6</em><b class="dominant" style="width:55.6%"></b><em>55.6</em></i></div>
-          </div>
-        </section>
-      </div>
-      <p class="data-note"><strong>Reading note.</strong> These are mean structured judgments produced by simulated agents and shown on a 0–100 scale. They are not percentages of human survey respondents.</p>
-    </section>
-
-    <section class="project-section">
-      <div class="section-label">Behavior and robustness</div><h3>AI-dominant disclosure redirected action toward verification.</h3>
-      <div class="academic-chart mb-4"><div class="chart-title"><span>C · ACTION</span><h4>Selected action at T0</h4></div><p class="chart-note">Share of agents selecting each action</p>
-        <div class="stack-legend"><span class="like">Like</span><span class="comment">Comment</span><span class="repost">Repost</span><span class="verify">Verify</span><span class="none">No action</span></div>
-        <div class="stack-bars">
-          <div><span>Human-led</span><i><b class="like" style="width:7%"></b><b class="comment" style="width:28%"></b><b class="repost" style="width:34%"></b><b class="verify" style="width:9%"></b><b class="none" style="width:22%"></b></i><strong>9% verify</strong></div>
-          <div><span>AI-assisted</span><i><b class="like" style="width:5%"></b><b class="comment" style="width:29%"></b><b class="repost" style="width:33%"></b><b class="verify" style="width:11%"></b><b class="none" style="width:22%"></b></i><strong>11% verify</strong></div>
-          <div><span>AI draft–human edit</span><i><b class="like" style="width:7%"></b><b class="comment" style="width:28%"></b><b class="repost" style="width:35%"></b><b class="verify" style="width:12%"></b><b class="none" style="width:18%"></b></i><strong>12% verify</strong></div>
-          <div><span>AI-dominant</span><i><b class="comment" style="width:15%"></b><b class="repost" style="width:5%"></b><b class="verify" style="width:74%"></b><b class="none" style="width:6%"></b></i><strong>74% verify</strong></div>
-        </div>
-      </div>
-      <div class="robustness-box"><strong>9/9 texts repeated the direction</strong><span>AI-dominant penalty range: 20.9–29.1 percentage points</span><p>Text identity shifted overall trust, but did not explain away the production-mode penalty.</p></div>
-    </section>
-
-    <section class="project-section">
-      <div class="section-label">Longitudinal evidence · T0–T2</div>
-      <h3>Trust increased with repeated accurate-news exposure, but the production-mode gap persisted.</h3>
-      <p>Four matched cohorts encountered accurate news across four stages. The three human-supervised modes remained substantially above AI-dominant production throughout the sequence.</p>
-      <div class="trajectory-legend"><span class="human">Human-led</span><span class="assist">AI-assisted</span><span class="draft">AI draft–human edit</span><span class="dominant">AI-dominant</span></div>
-      <div class="row research-chart-row">
-        <div class="col-lg-6 mb-4"><div class="academic-chart trajectory-chart h-100">
-          <div class="chart-title"><span>D · ARTICLE</span><h4>Article trust over time</h4></div><p class="chart-note">Mean score · n = 50 per mode · shaded 95% confidence intervals</p>
-          <svg viewBox="0 0 520 315" role="img" aria-labelledby="article-trust-title article-trust-desc">
-            <title id="article-trust-title">Article trust across four timesteps and production modes</title><desc id="article-trust-desc">AI-assisted stays highest, followed by human-led and AI draft human edit. AI-dominant rises from 0.375 to 0.464 but remains substantially lower.</desc>
-            <g class="trajectory-grid"><line x1="58" y1="35" x2="490" y2="35"/><line x1="58" y1="103" x2="490" y2="103"/><line x1="58" y1="171" x2="490" y2="171"/><line x1="58" y1="239" x2="490" y2="239"/></g>
-            <g class="trajectory-axis"><text x="18" y="39">.80</text><text x="18" y="107">.65</text><text x="18" y="175">.50</text><text x="18" y="243">.35</text><text x="53" y="276">T0</text><text x="192" y="276">T1</text><text x="329" y="276">T2.1</text><text x="468" y="276">T2.2</text><text class="axis-name" x="274" y="304">Exposure stage</text></g>
-            <path class="trajectory-band human" d="M58 65 L202 53 L346 51 L490 50 L490 61 L346 62 L202 64 L58 78 Z"/><path class="trajectory-line human" d="M58 71 L202 58 L346 57 L490 56"/>
-            <path class="trajectory-band assist" d="M58 54 L202 45 L346 44 L490 44 L490 57 L346 57 L202 58 L58 70 Z"/><path class="trajectory-line assist" d="M58 62 L202 51 L346 51 L490 51"/>
-            <path class="trajectory-band draft" d="M58 83 L202 74 L346 73 L490 74 L490 84 L346 84 L202 84 L58 95 Z"/><path class="trajectory-line draft" d="M58 89 L202 79 L346 78 L490 79"/>
-            <path class="trajectory-band dominant" d="M58 226 L202 190 L346 181 L490 177 L490 194 L346 199 L202 207 L58 242 Z"/><path class="trajectory-line dominant" d="M58 234 L202 199 L346 190 L490 186"/>
-            <g class="trajectory-dots human"><circle cx="58" cy="71" r="4"/><circle cx="202" cy="58" r="4"/><circle cx="346" cy="57" r="4"/><circle cx="490" cy="56" r="4"/></g><g class="trajectory-dots assist"><circle cx="58" cy="62" r="4"/><circle cx="202" cy="51" r="4"/><circle cx="346" cy="51" r="4"/><circle cx="490" cy="51" r="4"/></g><g class="trajectory-dots draft"><circle cx="58" cy="89" r="4"/><circle cx="202" cy="79" r="4"/><circle cx="346" cy="78" r="4"/><circle cx="490" cy="79" r="4"/></g><g class="trajectory-dots dominant"><circle cx="58" cy="234" r="4"/><circle cx="202" cy="199" r="4"/><circle cx="346" cy="190" r="4"/><circle cx="490" cy="186" r="4"/></g>
-          </svg>
-          <div class="trajectory-endpoints"><span>Human-led: .720 → .752</span><span>AI-assisted: .741 → .764</span><span>AI draft–edit: .684 → .704</span><span>AI-dominant: .375 → .464</span></div>
-          <p class="chart-finding">AI-dominant article trust recovered by 8.9 points, yet still ended 23.9 points below the lowest human-supervised mode.</p>
-        </div></div>
-        <div class="col-lg-6 mb-4"><div class="academic-chart trajectory-chart h-100">
-          <div class="chart-title"><span>E · MEDIA</span><h4>Media trust over time</h4></div><p class="chart-note">Mean score · n = 50 per mode · shaded 95% confidence intervals</p>
-          <svg viewBox="0 0 520 315" role="img" aria-labelledby="media-trust-title media-trust-desc">
-            <title id="media-trust-title">Media trust across four timesteps and production modes</title><desc id="media-trust-desc">All three human-supervised modes increase gradually, while AI-dominant media trust remains nearly flat around 0.45.</desc>
-            <g class="trajectory-grid"><line x1="58" y1="35" x2="490" y2="35"/><line x1="58" y1="103" x2="490" y2="103"/><line x1="58" y1="171" x2="490" y2="171"/><line x1="58" y1="239" x2="490" y2="239"/></g>
-            <g class="trajectory-axis"><text x="18" y="39">.70</text><text x="18" y="107">.60</text><text x="18" y="175">.50</text><text x="18" y="243">.40</text><text x="53" y="276">T0</text><text x="192" y="276">T1</text><text x="329" y="276">T2.1</text><text x="468" y="276">T2.2</text><text class="axis-name" x="274" y="304">Exposure stage</text></g>
-            <path class="trajectory-band human" d="M58 79 L202 69 L346 65 L490 59 L490 89 L346 97 L202 103 L58 115 Z"/><path class="trajectory-line human" d="M58 98 L202 87 L346 80 L490 74"/>
-            <path class="trajectory-band assist" d="M58 83 L202 73 L346 66 L490 60 L490 93 L346 100 L202 109 L58 121 Z"/><path class="trajectory-line assist" d="M58 103 L202 92 L346 84 L490 77"/>
-            <path class="trajectory-band draft" d="M58 102 L202 94 L346 89 L490 84 L490 111 L346 117 L202 123 L58 135 Z"/><path class="trajectory-line draft" d="M58 116 L202 107 L346 101 L490 96"/>
-            <path class="trajectory-band dominant" d="M58 191 L202 191 L346 189 L490 188 L490 216 L346 218 L202 220 L58 222 Z"/><path class="trajectory-line dominant" d="M58 206 L202 205 L346 204 L490 204"/>
-            <g class="trajectory-dots human"><circle cx="58" cy="98" r="4"/><circle cx="202" cy="87" r="4"/><circle cx="346" cy="80" r="4"/><circle cx="490" cy="74" r="4"/></g><g class="trajectory-dots assist"><circle cx="58" cy="103" r="4"/><circle cx="202" cy="92" r="4"/><circle cx="346" cy="84" r="4"/><circle cx="490" cy="77" r="4"/></g><g class="trajectory-dots draft"><circle cx="58" cy="116" r="4"/><circle cx="202" cy="107" r="4"/><circle cx="346" cy="101" r="4"/><circle cx="490" cy="96" r="4"/></g><g class="trajectory-dots dominant"><circle cx="58" cy="206" r="4"/><circle cx="202" cy="205" r="4"/><circle cx="346" cy="204" r="4"/><circle cx="490" cy="204" r="4"/></g>
-          </svg>
-          <div class="trajectory-endpoints"><span>Human-led: .608 → .642</span><span>AI-assisted: .601 → .639</span><span>AI draft–edit: .582 → .612</span><span>AI-dominant: .449 → .452</span></div>
-          <p class="chart-finding">Media trust grew by 3.0–3.8 points under human-supervised production, while AI-dominant media trust was almost unchanged.</p>
-        </div></div>
-      </div>
-      <div class="academic-chart static-text-chart mb-4">
-        <div class="chart-title"><span>F · NINE TEXTS</span><h4>Article trust by static news text</h4></div>
-        <p class="chart-note">T0 mean article trust for E001–E009 · four production modes</p>
-        <svg viewBox="0 0 760 350" role="img" aria-labelledby="nine-text-title nine-text-desc">
-          <title id="nine-text-title">Article trust across all nine static news texts</title><desc id="nine-text-desc">For every text, AI-dominant article trust is lower than the three human-supervised production modes.</desc>
-          <g class="trajectory-grid"><line x1="58" y1="35" x2="730" y2="35"/><line x1="58" y1="80" x2="730" y2="80"/><line x1="58" y1="125" x2="730" y2="125"/><line x1="58" y1="170" x2="730" y2="170"/><line x1="58" y1="215" x2="730" y2="215"/><line x1="58" y1="260" x2="730" y2="260"/></g>
-          <g class="trajectory-axis"><text x="18" y="39">.80</text><text x="18" y="84">.70</text><text x="18" y="129">.60</text><text x="18" y="174">.50</text><text x="18" y="219">.40</text><text x="18" y="264">.30</text><text x="48" y="292">E001</text><text x="130" y="292">E002</text><text x="212" y="292">E003</text><text x="294" y="292">E004</text><text x="376" y="292">E005</text><text x="458" y="292">E006</text><text x="540" y="292">E007</text><text x="622" y="292">E008</text><text x="704" y="292">E009</text><text class="axis-name" x="394" y="326">Static news text</text></g>
-          <path class="trajectory-line human" d="M58 84 L140 82 L222 64 L304 74 L386 88 L468 76 L550 98 L632 96 L714 84"/><path class="trajectory-line assist" d="M58 82 L140 80 L222 51 L304 74 L386 105 L468 84 L550 101 L632 109 L714 90"/><path class="trajectory-line draft" d="M58 95 L140 84 L222 76 L304 88 L386 88 L468 92 L550 105 L632 101 L714 92"/><path class="trajectory-line dominant" d="M58 196 L140 176 L222 195 L304 201 L386 195 L468 180 L550 215 L632 199 L714 195"/>
-          <g class="trajectory-dots human"><circle cx="58" cy="84" r="4"/><circle cx="140" cy="82" r="4"/><circle cx="222" cy="64" r="4"/><circle cx="304" cy="74" r="4"/><circle cx="386" cy="88" r="4"/><circle cx="468" cy="76" r="4"/><circle cx="550" cy="98" r="4"/><circle cx="632" cy="96" r="4"/><circle cx="714" cy="84" r="4"/></g><g class="trajectory-dots assist"><circle cx="58" cy="82" r="4"/><circle cx="140" cy="80" r="4"/><circle cx="222" cy="51" r="4"/><circle cx="304" cy="74" r="4"/><circle cx="386" cy="105" r="4"/><circle cx="468" cy="84" r="4"/><circle cx="550" cy="101" r="4"/><circle cx="632" cy="109" r="4"/><circle cx="714" cy="90" r="4"/></g><g class="trajectory-dots draft"><circle cx="58" cy="95" r="4"/><circle cx="140" cy="84" r="4"/><circle cx="222" cy="76" r="4"/><circle cx="304" cy="88" r="4"/><circle cx="386" cy="88" r="4"/><circle cx="468" cy="92" r="4"/><circle cx="550" cy="105" r="4"/><circle cx="632" cy="101" r="4"/><circle cx="714" cy="92" r="4"/></g><g class="trajectory-dots dominant"><circle cx="58" cy="196" r="4"/><circle cx="140" cy="176" r="4"/><circle cx="222" cy="195" r="4"/><circle cx="304" cy="201" r="4"/><circle cx="386" cy="195" r="4"/><circle cx="468" cy="180" r="4"/><circle cx="550" cy="215" r="4"/><circle cx="632" cy="199" r="4"/><circle cx="714" cy="195" r="4"/></g>
-        </svg>
-        <p class="chart-finding">All nine texts reproduced the same separation: the three human-supervised modes remained near .64–.76, while AI-dominant trust remained near .40–.49.</p>
-      </div>
-      <p class="data-note"><strong>Reading note.</strong> The timestep charts average across all nine texts: T0 is the initial judgment; T1, T2.1, and T2.2 are successive accurate-news exposures. The final chart displays the nine text-level T0 means separately.</p>
-    </section>
-
-    <section class="project-section false-news-section">
-      <div class="section-label">Updated experiment · Illusory truth</div>
-      <h3>Repeated exposure reliably increased belief in a single false claim.</h3>
-      <p>Agents encountered two false-news items twice and then rated those repeated claims alongside three novel false claims. Independent cohorts were tested after 1, 2, or 7 days across all four production modes.</p>
-      <div class="row metric-grid compact my-4"><div class="col-6 col-md-3"><strong>3,000</strong><span>claim ratings</span></div><div class="col-6 col-md-3"><strong>600</strong><span>agent × delay cells</span></div><div class="col-6 col-md-3"><strong>12/12</strong><span>significant ITE cells</span></div><div class="col-6 col-md-3"><strong>90–98%</strong><span>agents with positive ITE</span></div></div>
-
-      <div class="academic-chart mb-4">
-        <div class="chart-title"><span>D · PRIMARY RESULT</span><h4>Illusory truth effect by production mode and delay</h4></div>
-        <p class="chart-note">ITE = mean truth rating of repeated claims − novel claims · all 12 cells p &lt; .001</p>
-        <div class="ite-legend"><span>1 day</span><span>2 days</span><span>7 days</span></div>
-        <div class="ite-matrix">
-          <div><span>Human-led</span><i><b style="height:75.3%"></b><b style="height:80.1%"></b><b style="height:81%"></b></i><strong>.226 / .240 / .243</strong><em>mean .236</em></div>
-          <div><span>AI-assisted</span><i><b style="height:82.4%"></b><b style="height:72.1%"></b><b style="height:75.5%"></b></i><strong>.247 / .216 / .227</strong><em>mean .230</em></div>
-          <div><span>AI draft–human edit</span><i><b style="height:82.6%"></b><b style="height:80.3%"></b><b style="height:71.7%"></b></i><strong>.248 / .241 / .215</strong><em>mean .234</em></div>
-          <div><span>AI-dominant</span><i><b style="height:75.6%"></b><b style="height:76.3%"></b><b style="height:71.1%"></b></i><strong>.227 / .229 / .213</strong><em>mean .223</em></div>
-        </div>
-        <p class="chart-finding">Between 90% and 98% of agents in every cell showed a positive ITE. Production mode and the 1–7 day interval did not significantly alter its size.</p>
-      </div>
-
-      <div class="row research-chart-row">
-        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
-          <div class="chart-title"><span>E · GENERAL SKEPTICISM</span><h4>Truth ratings averaged across delays</h4></div><p class="chart-note">Human-led versus AI-dominant</p>
-          <div class="dual-legend belief-legend"><span>Repeated false</span><span>Novel false</span></div>
-          <div class="dual-bars belief-bars"><div><span>Human-led</span><i><b style="width:76.4%"></b><em style="width:52.7%"></em></i><strong>.764 / .527</strong></div><div><span>AI-dominant</span><i><b style="width:72%"></b><em style="width:49.7%"></em></i><strong>.720 / .497</strong></div></div>
-          <div class="significance-note"><span>Repeated: −.044, p &lt; .001</span><span>Novel: −.031, p = .003</span><span>ITE: −.013, p = .292</span></div>
-          <p class="chart-finding">AI-dominant production reduced belief in both repeated and novel false claims. It produced broad skepticism, not selective resistance to repetition.</p>
-        </div></div>
-        <div class="col-lg-6 mb-4"><div class="academic-chart h-100">
-          <div class="chart-title"><span>F · MANIPULATION CHECK</span><h4>Cognitive mechanisms at T0</h4></div><p class="chart-note">Human-led versus AI-dominant · mean 0–1 score</p>
-          <div class="mechanism-compare"><div><span>Negative machine heuristic</span><i><b style="width:23.7%"></b><em style="width:51.5%"></em></i><strong>.237 → .515</strong></div><div><span>Verification intention</span><i><b style="width:47.8%"></b><em style="width:52.2%"></em></i><strong>.478 → .522</strong></div><div><span>Perceived AI involvement</span><i><b style="width:4.7%"></b><em style="width:88%"></em></i><strong>.047 → .880</strong></div><div><span>Perceived human control</span><i><b style="width:92.8%"></b><em style="width:40.5%"></em></i><strong>.928 → .405</strong></div></div>
-          <p class="chart-finding">The manipulation changed the proposed mechanisms, but their within-cell correlations with ITE were small and unstable; mediation is therefore not claimed.</p>
-        </div></div>
-      </div>
-
-      <div class="row research-chart-row">
-        <div class="col-lg-7 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>G · DELAY</span><h4>Memory accessibility before and after repeat exposure</h4></div><p class="chart-note">Mean accessibility by delay</p><div class="dual-legend memory-legend"><span>Before repeat</span><span>After repeat</span></div><div class="dual-bars memory-bars"><div><span>1 day</span><i><b style="width:74.1%"></b><em style="width:93.9%"></em></i><strong>.741 / .939</strong></div><div><span>2 days</span><i><b style="width:67.1%"></b><em style="width:93.2%"></em></i><strong>.671 / .932</strong></div><div><span>7 days</span><i><b style="width:40.9%"></b><em style="width:88.7%"></em></i><strong>.409 / .887</strong></div></div><p class="chart-finding">Accessibility decayed with time, but repeat exposure restored it. Final repeated-claim ratings remained similar: .754, .759, and .744.</p></div></div>
-        <div class="col-lg-5 mb-4"><div class="academic-chart h-100"><div class="chart-title"><span>H · MATERIALS</span><h4>ITE by false-news item</h4></div><p class="chart-note">Pooled raw mean difference</p><div class="item-bars"><div><span>E010</span><i><b style="width:70.3%"></b></i><strong>.201</strong></div><div><span>E011</span><i><b style="width:73.1%"></b></i><strong>.209</strong></div><div><span>E012</span><i><b style="width:81.8%"></b></i><strong>.234</strong></div><div class="highlight"><span>E013</span><i><b style="width:100%"></b></i><strong>.286</strong></div><div><span>E014</span><i><b style="width:79%"></b></i><strong>.226</strong></div></div><p class="chart-finding">All five items showed the effect; E013 was strongest, underscoring the role of claim plausibility, specificity, and topic.</p></div></div>
-      </div>
-      <p class="data-note"><strong>Measurement boundary.</strong> ITE is a final repeated-versus-novel contrast; the design does not measure the same claim's truth rating at T0. Results are simulation evidence, not human-population causal estimates.</p>
-    </section>
-
-    <section class="project-section mb-0">
-      <div class="section-label">Interpretation</div><h3>What the simulations suggest</h3>
-      <div class="row interpretation-grid"><div class="col-md-4"><h5>Repetition remains powerful</h5><p>Two exposures produced a stable positive illusory truth effect in every production mode and delay.</p></div><div class="col-md-4"><h5>AI prompts broad skepticism</h5><p>AI-dominant production lowered belief in repeated and novel false claims rather than selectively suppressing repetition.</p></div><div class="col-md-4"><h5>Mechanism is not mediation</h5><p>Machine heuristics and verification changed as predicted, but did not explain meaningful variation in ITE.</p></div></div>
-      <p class="data-note mt-3"><strong>Current conclusion.</strong> Repetition significantly raises the credibility of a false claim. AI-dominant production activates skepticism and verification awareness and lowers overall false-claim credibility, but the relative repetition gain remains statistically unchanged.</p>
-      <a class="btn btn-outline-primary mt-2" target="_blank" href="{{ '/assets/Jiarui-Lao-Research-Plan-CN.pdf' | relative_url }}">Read research plan</a>
-    </section>
+    <span class="text-muted small">01 · 2026–present</span>
+    <h2 class="mt-2">AI-Generated News and Social Media Trust</h2>
+    <p class="lead mb-3">Studying how AI participation in news production affects trust, verification, and belief through multi-agent social-media simulations.</p>
+    <div class="interest-tags">
+      <span>OASIS</span>
+      <span>Multi-agent simulation</span>
+      <span>AI-generated news</span>
+      <span>Computational social science</span>
+    </div>
   </div>
 </article>
 
-<article class="card border-0 shadow-sm bg-white"><div class="card-body p-4 p-md-5"><span class="text-muted small">02 · 2026–present</span><h2 class="mt-2">Power Politics and Normative Dynamics in China’s Territorial Disputes</h2><p class="lead">Building a longitudinal database of diplomatic activity from multi-country news.</p><p>The project combines rule-based extraction and BERT classification to identify actors, institutions, visit direction, event type, and topic. The workflow emphasizes entity normalization, annotation consistency, and reproducible data-quality checks.</p><div class="interest-tags"><span>BERT</span><span>Entity normalization</span><span>Annotation workflow</span><span>Data quality</span></div></div></article>
+<article class="card border-0 shadow-sm bg-white">
+  <div class="card-body p-4 p-md-5">
+    <span class="text-muted small">02 · 2026–present</span>
+    <h2 class="mt-2">Power Politics and Normative Dynamics in China’s Territorial Disputes</h2>
+    <p class="lead mb-3">Building a longitudinal database of diplomatic activity from multi-country news using rule-based extraction and BERT classification.</p>
+    <div class="interest-tags">
+      <span>BERT</span>
+      <span>Political text analysis</span>
+      <span>Entity normalization</span>
+      <span>Data quality</span>
+    </div>
+  </div>
+</article>
