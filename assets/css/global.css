@@ -100,6 +100,9 @@ body {
 .mechanism-compare i { position: relative; display: block; height: 18px; }.mechanism-compare i b, .mechanism-compare i em { position: absolute; left: 0; display: block; height: 6px; border-radius: 99px; }.mechanism-compare i b { top: 1px; background: #527fa0; }.mechanism-compare i em { bottom: 1px; background: #c3922e; }.mechanism-compare strong { text-align: right; font-size: .72rem; }
 .memory-legend span:first-child::before, .memory-bars i b { background: #8db5c9; }.memory-legend span:nth-child(2)::before, .memory-bars i em { background: #315c7b; }
 .item-bars > div { display: grid; grid-template-columns: 45px 1fr 40px; align-items: center; gap: .65rem; margin: .7rem 0; font-size: .76rem; }.item-bars i { display: block; height: 8px; border-radius: 99px; background: #e8edf1; overflow: hidden; }.item-bars b { display: block; height: 100%; border-radius: inherit; background: #6f99b4; }.item-bars .highlight b { background: #c3922e; }.item-bars strong { text-align: right; font-size: .72rem; }
+.trajectory-legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .45rem 1.1rem; margin: 1.25rem 0 1rem; color: #667684; font-size: .72rem; }.trajectory-legend span::before { display: inline-block; width: 14px; height: 3px; margin-right: .35rem; content: ""; vertical-align: middle; background: currentColor; }.trajectory-legend .human { color: #245e98; }.trajectory-legend .assist { color: #2b91aa; }.trajectory-legend .draft { color: #c3922e; }.trajectory-legend .dominant { color: #b65b87; }
+.trajectory-chart svg { display: block; width: 100%; height: auto; margin-top: .5rem; overflow: visible; }.trajectory-grid line { stroke: #dfe6eb; stroke-width: 1; }.trajectory-axis text { fill: #748391; font-size: 12px; }.trajectory-axis .axis-name { text-anchor: middle; font-size: 11px; }.trajectory-line { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }.trajectory-band { opacity: .13; stroke: none; }.trajectory-line.human { stroke: #245e98; }.trajectory-line.assist { stroke: #2b91aa; }.trajectory-line.draft { stroke: #c3922e; }.trajectory-line.dominant { stroke: #b65b87; }.trajectory-band.human, .trajectory-dots.human { fill: #245e98; }.trajectory-band.assist, .trajectory-dots.assist { fill: #2b91aa; }.trajectory-band.draft, .trajectory-dots.draft { fill: #c3922e; }.trajectory-band.dominant, .trajectory-dots.dominant { fill: #b65b87; }.trajectory-dots circle { stroke: white; stroke-width: 1.5; }
+.trajectory-endpoints { display: grid; grid-template-columns: 1fr 1fr; gap: .3rem .8rem; margin-top: .3rem; color: #657582; font-size: .69rem; }
 .academic-timeline { border-top: 1px solid #e0e6ec; }
 .academic-timeline section { display: grid; grid-template-columns: 155px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid #e0e6ec; }
 .academic-timeline time { color: #2d6aa6; font: .8rem "Source Code Pro", monospace; }
@@ -121,6 +124,8 @@ body {
     .mechanism-compare > div { grid-template-columns: 110px 1fr; }.mechanism-compare strong { grid-column: 2; text-align: left; }
     .measure-facets { grid-template-columns: 1fr; }
     .measure-legend { justify-content: flex-start; }
+    .trajectory-legend { justify-content: flex-start; }
+    .trajectory-endpoints { grid-template-columns: 1fr; }
 }
 
 h1, h2, h3, h4, h5, h6,
