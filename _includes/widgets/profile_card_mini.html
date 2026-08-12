@@ -45,11 +45,16 @@
                     </div>
                 </div>
 
-                <div class="row pt-2">
-                    <div class="col text-center h4">
+                <div class="row pt-3">
+                    <div class="col text-center">
+                        <div class="profile-document-links">
                         {% if site.data.profile.cv_link %}
-                        <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="CV"><i class="fas fa-file-lines"></i></a>
+                        <a class="profile-document-link" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-lines"></i><span>CV</span></a>
                         {% endif %}
+                        {% if site.data.profile.proposal_link %}
+                        <a class="profile-document-link" href="{{ site.data.profile.proposal_link | relative_url }}"><i class="fas fa-lightbulb"></i><span>Research Proposal</span></a>
+                        {% endif %}
+                        </div>
                         {% if site.data.profile.github %}
                         <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
                             <i class="fab fa-github"></i>
