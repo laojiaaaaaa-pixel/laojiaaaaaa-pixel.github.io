@@ -61,6 +61,13 @@ body {
 .proposal-page { max-width: 900px; margin: 0 auto; }
 .proposal-question { margin: 1.75rem 0; padding: 1.25rem 1.4rem; border-left: 4px solid #2b91aa; color: #24465f; background: #f3f7fa; font-size: 1.18rem; font-weight: 700; line-height: 1.55; }
 .proposal-body p { color: #46596a; font-size: 1.02rem; line-height: 1.8; }
+.proposal-section { padding: 2.1rem 0; border-top: 1px solid #e3e9ee; }
+.proposal-section h2 { margin: .45rem 0 1rem; color: #263c4e; font-size: 1.45rem; }
+.proposal-methods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; margin: 1.4rem 0 1.6rem; }
+.proposal-methods > div { padding: 1rem; border: 1px solid #dfe7ed; border-radius: .4rem; background: #f8fafb; }
+.proposal-methods strong, .proposal-methods span { display: block; }
+.proposal-methods strong { margin-bottom: .45rem; color: #245e98; font-size: .9rem; }
+.proposal-methods span { color: #657582; font-size: .82rem; line-height: 1.55; }
 
 .interest-tags { display: flex; flex-wrap: wrap; gap: .55rem; }
 .interest-tags span { padding: .38rem .7rem; border: 1px solid #d9e2ec; border-radius: 999px; color: #34516f; background: #f5f8fb; font-size: .86rem; }
@@ -157,6 +164,7 @@ body {
 
 @media (max-width: 767px) {
     .academic-monogram { width: 120px; height: 120px; }
+    .proposal-methods { grid-template-columns: 1fr; }
     .metric-grid > div { border-right: 0; border-bottom: 1px solid #dfe6ed; }
     .academic-timeline section { grid-template-columns: 1fr; gap: .55rem; }
     .project-section { padding: 2rem 0; }
